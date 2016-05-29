@@ -29,7 +29,7 @@ pdflatex schemaanalyst_bibliography.tex
 
 If you find that some of the entries are incorrectly formatted and thus your LaTeX and BibTeX tools are not processing
 them correctly, then please open a new issue and one of us will attempt to resolve your concerns.  Please note that the
-provided BibTeX file is not likely to compile correctly &mdash; due to issues with Unicode encoding &mdash; if you try
-to use `biber` as your BibTeX file manager. Finally, if you find this repository useful, then we hope that you will star
-it.
+provided BibTeX file is not likely to compile correctly &mdash; due to issues with encoding in Unicode &mdash; if you
+try to use `biber` as your BibTeX file manager. Finally, if you find this repository useful, then we hope that you will
+star it.
 
