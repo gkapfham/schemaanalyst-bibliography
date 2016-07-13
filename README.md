@@ -25,6 +25,23 @@ pdflatex schemaanalyst_bibliography.tex
 pdflatex schemaanalyst_bibliography.tex
 ```
 
+Alternatively, you can use the repository as a git submodule of another repository. To do this, type the following
+command:
+
+```shell
+git submodule add https://github.com/gkapfham/schemaanalyst-bibliography.git bibtex
+```
+
+where "bibtex" is the name of the directory that you wish to install the repository. Following this, you will need to
+invoke the following commands:
+
+```shell
+git submodule init
+git submodule update
+```
+
+You will need to re-run the latter command periodically to receive any updates to the repository.
+
 ## Problems or Praise?
 
 If you find that some of the entries are incorrectly formatted and thus your LaTeX and BibTeX tools are not processing
