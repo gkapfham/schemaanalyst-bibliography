@@ -40,7 +40,21 @@ git submodule init
 git submodule update
 ```
 
-You will need to re-run the latter command periodically to receive any updates to the repository.
+Of course, the submodule will need to be pulled periodically to receive any changes. One way to do this is to change 
+directory to the submodule and issue a ``git pull`` in the usual manner. However, for some reason, the submodule can 
+become detached from its HEAD. If this is the case, it can be reattached by issuing the following command from the 
+submodule's directory:
+
+```shell
+git checkout master
+```
+
+Another means of ensuring the submodule is updated when pulling from the main repository is to issue the following 
+command, which will also update all submodules:
+
+```shell
+git pull --recurse-submodules
+```
 
 ## Problems or Praise?
 
@@ -49,4 +63,3 @@ them correctly, then please open a new issue and one of us will attempt to resol
 provided BibTeX file is not likely to compile correctly &mdash; due to issues with encoding in Unicode &mdash; if you
 try to use `biber` as your BibTeX file manager. Finally, if you find this repository useful, then we hope that you will
 star it.
-
