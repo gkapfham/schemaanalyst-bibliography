@@ -40,14 +40,9 @@ git submodule init
 git submodule update
 ```
 
-Of course, the submodule will need to be pulled periodically to receive any changes. This can be done by repeating
-the latter command above, or, to change directory to the submodule and issue the usual ``git pull``. However, Git may 
-have detached the submodule from its HEAD. If this is the case, it can be reattached by issuing the following command 
-from the submodule's directory:
-
-```shell
-git checkout master
-```
+Of course, the submodule will need to be pulled periodically to receive any changes. This can be done by changing 
+directory to the submodule and issue the usual ``git pull``. (If Git has detached the submodule from its HEAD, it
+may be reattached by issuing the command ``git checkout master`` from the submodule's directory.
 
 Another means of ensuring the submodule is updated when pulling from the main repository is to issue the following 
 command, which will also update all submodules:
