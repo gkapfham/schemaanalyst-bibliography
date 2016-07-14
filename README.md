@@ -29,21 +29,21 @@ Alternatively, you can use the repository as a git submodule of another reposito
 command:
 
 ```shell
-git submodule add https://github.com/gkapfham/schemaanalyst-bibliography.git bibtex
+git submodule add -b master https://github.com/gkapfham/schemaanalyst-bibliography.git bibtex
 ```
 
-where "bibtex" is the name of the directory that you wish to install the repository. Following this, you will need to
-invoke the following commands:
+where the final parameter ("bibtex") is the name of the directory that you wish to install the repository. Following 
+this, you will need to invoke the following commands:
 
 ```shell
 git submodule init
 git submodule update
 ```
 
-Of course, the submodule will need to be pulled periodically to receive any changes. One way to do this is to change 
-directory to the submodule and issue a ``git pull`` in the usual manner. However, for some reason, the submodule can 
-become detached from its HEAD. If this is the case, it can be reattached by issuing the following command from the 
-submodule's directory:
+Of course, the submodule will need to be pulled periodically to receive any changes. This can be done by repeating
+the latter command above, or, to change directory to the submodule and issue the usual ``git pull``. However, Git may 
+have detached the submodule from its HEAD. If this is the case, it can be reattached by issuing the following command 
+from the submodule's directory:
 
 ```shell
 git checkout master
