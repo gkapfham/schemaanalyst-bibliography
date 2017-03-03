@@ -10,7 +10,7 @@ citing one of these research papers in your own LaTeX document.
 You can type the following command if you want to clone this repository:
 
 ```shell
-git clone https://github.com/gkapfham/schemaanalyst-bibliography.git
+git clone https://github.com/schemaanalyst/schemaanalyst-bibliography.git
 ```
 
 Now, you can type `cd schemaanalyst-bibliography` and use the BibTeX file in your own LaTeX project.  Alternatively, a
@@ -29,7 +29,7 @@ Alternatively, you can use the repository as a git submodule of another reposito
 command:
 
 ```shell
-git submodule add -b master https://github.com/gkapfham/schemaanalyst-bibliography.git bibtex
+git submodule add -b master https://github.com/schemaanalyst/schemaanalyst-bibliography.git bibtex
 ```
 
 where the final parameter ("bibtex") is the name of the directory that you wish to install the repository. Following 
