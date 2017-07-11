@@ -17,14 +17,14 @@ git clone https://github.com/schemaanalyst/schemaanalyst-bibliography.git
 
 Now, you can type `cd schemaanalyst-bibliography` and use the BibTeX file in
 your own LaTeX project. Alternatively, a document that cites all of the entries
-in this bibliography can be compiled on an Ubuntu 15.04 LTS workstation using
+in this bibliography can be compiled on an Ubuntu 16.04 LTS workstation using
 `pdflatex` and `bibtex`; you may also compile to a PDF file using a wide variety
 of other tools, such as `latexmk`. You can type the following commands to create
 the summary document.
 
 ```shell
 pdflatex schemaanalyst_bibliography.tex
-bibtex schemaanalyst_bibliography.bcf
+bibtex schemaanalyst_bibliography.aux
 pdflatex schemaanalyst_bibliography.tex
 pdflatex schemaanalyst_bibliography.tex
 ```
@@ -36,7 +36,7 @@ command:
 git submodule add -b master https://github.com/schemaanalyst/schemaanalyst-bibliography.git bibtex
 ```
 
-where the final parameter ("bibtex") is the name of the directory that you wish to install the repository. Following 
+where the final parameter ("bibtex") is the name of the directory that you wish to install the repository. Following
 this, you will need to invoke the following commands:
 
 ```shell
@@ -44,11 +44,11 @@ git submodule init
 git submodule update
 ```
 
-Of course, the submodule will need to be pulled periodically to receive any changes. This can be done by changing 
+Of course, the submodule will need to be pulled periodically to receive any changes. This can be done by changing
 directory to the submodule and issue the usual ``git pull``. (If Git has detached the submodule from its HEAD, it
 may be reattached by issuing the command ``git checkout master`` from the submodule's directory.
 
-Another means of ensuring the submodule is updated when pulling from the main repository is to issue the following 
+Another means of ensuring the submodule is updated when pulling from the main repository is to issue the following
 command, which will also update all submodules:
 
 ```shell
