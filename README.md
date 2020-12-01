@@ -33,7 +33,7 @@ Alternatively, you can use the repository as a git submodule of another reposito
 command:
 
 ```shell
-git submodule add -b master https://github.com/schemaanalyst/schemaanalyst-bibliography.git bibtex
+git submodule add https://github.com/schemaanalyst/schemaanalyst-bibliography.git bibtex
 ```
 
 where the final parameter ("bibtex") is the name of the directory that you wish to install the repository. Following
